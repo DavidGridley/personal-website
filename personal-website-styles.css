@@ -1,0 +1,35 @@
+* {
+  body-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #FFCF56
+}
+
+.content {
+  background-color: #86BAA1;
+}
+
+.footer {
+  background-color: #3AB795
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 960px) {
+  
+}
