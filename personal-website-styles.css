@@ -35,26 +35,37 @@ h2 {
 }
 
 .header {
-  background-color: #FFCF56;
   display: flex;
-  height: 10vh;
+  flex-direction: column;
+  height: 20vh;
 }
 
 .header__name {
   display: flex;
-  background-color: salmon;
+  background-color: black;
   align-items: center;
+  justify-content: center;
   margin: 0;
-  flex: 1
+  flex: 1;
 }
+
+#name {
+  color: white;
+}
+
 
 .header__bio {
   display: flex;
-  background-color: firebrick;
+  background-color: black;
   margin: 0;
   align-items: center;
   justify-content: center;
   flex: 1;
+}
+
+#bio {
+  color: white;
+  font-size: 3vw;
 }
 
 .content {
@@ -68,17 +79,27 @@ h2 {
 .content__nav {
   width: 100vw;
   display: flex;
-  background-color: sienna;
+  background-color: black;
   justify-content: space-evenly;
+  border-top: 1px solid white;
 }
+
+#nav__menu {
+  color: white;
+}
+
 .content__body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  background-color: lightseagreen;
+  background-color: white;
   flex: 1;
+}
+
+#content__text {
+
 }
 
 .content__sidebar {
@@ -86,7 +107,7 @@ h2 {
 }
 
 .footer {
-  background-color: #3AB795;
+  background-color: black;
   height: 50px;
   display: flex;
   justify-content: space-around;
@@ -113,12 +134,24 @@ h2 {
   justify-content: space-evenly;
 }
 
+#links__title {
+  color:white;
+}
 
+
+#links {
+  color: white;
+}
 
 @media (min-width: 768px) {
 
   .header {
     min-height: 12vh;
+  }
+
+  #bio{
+    font-size: 2vh;
+    padding-right: 5px;
   }
 
   .content {
@@ -133,9 +166,12 @@ h2 {
     width: 100px;
     min-height: 83vh;
     justify-content: space-around;
+    padding-left: 5px;
+    border-bottom: 1px solid;
   }
 
   .content__body {
+    position: relative;
     display: flex;
     flex: 2;
   }
