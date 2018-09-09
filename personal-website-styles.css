@@ -34,6 +34,17 @@ ul li {
 h2 {
   padding: 0;
   margin: 0;
+  font-size: 2em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  transition: 1s;
+}
+
+a:hover{
+  opacity: 0.5;
 }
 
 .header__image {
@@ -183,6 +194,7 @@ h2 {
   display: flex;
   flex: 1;
   justify-content: space-evenly;
+  height: 100%
 }
 
 #links__title {
@@ -190,8 +202,16 @@ h2 {
 }
 
 
-#links {
-  color: black;
+#instagram__icon{
+ height: 100%
+}
+
+#twitter__icon{
+  height: 100%
+}
+
+#github__icon{
+  height: 100%
 }
 
 @media (min-width: 768px) {
@@ -209,6 +229,11 @@ h2 {
   min-height: 30vh;
   width: 30vh;
   border-radius: 50%;
+  }
+
+  #name {
+  color: black;
+  font-size: 3em
   }
 
   .header__bio{
@@ -245,6 +270,56 @@ h2 {
     position: relative;
     display: flex;
     flex: 2;
+  }
+
+}
+
+@media (min-width: 960px) {
+
+  .header__image{
+
+  }
+
+  .header{
+    min-height: 90vh;
+  }
+
+  .profile__image{
+    min-height: 40vh;
+    width: 40vh
+  }
+
+ .content__nav{
+   width: 150px;
+  }
+
+  #nav__menu{
+    font-size: 2em;
+  }
+
+ .content__body{
+   padding-left: 5px;
+   padding-right: 20px;
+ }
+
+ #content__text{
+   font-size: 2em
+ }
+
+ #experience__pic {
+    width: 90%
+  }
+
+  #current__projects_pic {
+    width: 90%;
+  }
+
+  #future__pic {
+    width: 90%;
+  }
+
+  .footer{
+    height: 70px;
   }
 
 }
