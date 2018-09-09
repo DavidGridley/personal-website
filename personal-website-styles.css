@@ -276,6 +276,10 @@ a:hover{
 
 @media (min-width: 960px) {
 
+  p {
+    width: 80vw;
+  }
+
   .header__image{
 
   }
@@ -287,6 +291,10 @@ a:hover{
   .profile__image{
     min-height: 40vh;
     width: 40vh
+  }
+
+  .header__bio{
+    width: 100vw;
   }
 
  .content__nav{
@@ -319,7 +327,13 @@ a:hover{
   }
 
   .footer{
-    height: 70px;
+    border-top: 2px solid;
+    height: 15vh;
+  }
+
+  #links__title {
+    font-size: 2em;
+    padding-left: 5px;
   }
 
 }
