@@ -34,6 +34,10 @@ h2 {
   margin: 0;
 }
 
+.header__image {
+  height: 80vh;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -42,7 +46,7 @@ h2 {
 
 .header__name {
   display: flex;
-  background-color: black;
+  background-color: white;
   align-items: center;
   justify-content: center;
   margin: 0;
@@ -50,13 +54,13 @@ h2 {
 }
 
 #name {
-  color: white;
+  color: black;
 }
 
 
 .header__bio {
   display: flex;
-  background-color: black;
+  background-color: white;
   margin: 0;
   align-items: center;
   justify-content: center;
@@ -64,7 +68,7 @@ h2 {
 }
 
 #bio {
-  color: white;
+  color: black;
   font-size: 3vw;
 }
 
@@ -79,13 +83,15 @@ h2 {
 .content__nav {
   width: 100vw;
   display: flex;
-  background-color: black;
+  background-color: white;
   justify-content: space-evenly;
-  border-top: 1px solid white;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 #nav__menu {
-  color: white;
+  color: black;
 }
 
 .content__body {
@@ -96,6 +102,7 @@ h2 {
   width: 100%;
   background-color: white;
   flex: 1;
+  padding-left: 5px;
 }
 
 #content__text {
@@ -107,11 +114,12 @@ h2 {
 }
 
 .footer {
-  background-color: black;
+  background-color: white;
   height: 50px;
   display: flex;
   justify-content: space-around;
   flex-shrink: 0;
+  border-top: 1px solid black;
 }
 
 .footer__title {
@@ -135,15 +143,19 @@ h2 {
 }
 
 #links__title {
-  color:white;
+  color: black;
 }
 
 
 #links {
-  color: white;
+  color: black;
 }
 
 @media (min-width: 768px) {
+
+  .header__image{
+    height: 100vh;
+  }
 
   .header {
     min-height: 12vh;
@@ -167,7 +179,7 @@ h2 {
     min-height: 83vh;
     justify-content: space-around;
     padding-left: 5px;
-    border-bottom: 1px solid;
+    border-bottom: 0px solid;
   }
 
   .content__body {
